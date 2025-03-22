@@ -1,5 +1,6 @@
 # wifi-kickout-universal  
 Automatically kick weak-signal Wi-Fi clients off your OpenWrt device, no matter which driver or interface naming scheme is at play. Because who needs freeloaders with a cringe-worthy signal anyway? 🚀🦶
+This repository was inspired by [smallerxie/wifi-kickout](https://github.com/smallerxie/wifi-kickout), thanks for his/her original work :) But it can't work on my Xiaomi BE10000:)
 
 ---
 
@@ -47,13 +48,7 @@ In short: *It’s your Wi-Fi bouncer.* And it’s not afraid to show clients the
 ## Installation
 
 1. **Copy** the script to your router, e.g. `/usr/bin/wifi-kickout-universal.sh`.
-2. **Convert to Unix line endings** if needed (often required if you copy from Windows):
-   ```bash
-   opkg update
-   opkg install dos2unix
-   dos2unix /usr/bin/wifi-kickout-universal.sh
-   ```
-3. **Make it executable**:
+2. **Make it executable**:
    ```bash
    chmod +x /usr/bin/wifi-kickout-universal.sh
    ```
@@ -75,10 +70,10 @@ cat /tmp/autokick.log  | grep Kick
 
 If you’d like to keep the Wi-Fi realm free of moochers 24/7, schedule it:
 ```bash
-echo "*/5 * * * * /usr/bin/wifi-kickout-universal.sh" >> /etc/crontabs/root
+echo "* * * * * /usr/bin/wifi-kickout-universal.sh" >> /etc/crontabs/root
 /etc/init.d/cron restart
 ```
-That’ll run it every 5 minutes. Feel free to adjust as you see fit.
+That’ll run it every minutes. Feel free to adjust as you see fit.
 
 ---
 
