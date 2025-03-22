@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# wifi-kickout-universal.sh
+# universal-autokick.sh
 # 
 # Tries multiple methods (wlanconfig, iw, hostapd_cli, ubus) to find connected
 # stations, parse their signal or RSSI, and kick the ones below a given threshold.
@@ -12,7 +12,7 @@ LOGFILE="/tmp/autokick.log"
 THRESHOLD=-70   # Adjust for your environment (e.g. -70 for negative dBm, or 30 if positive RSSI)
 DATE_NOW=$(date)
 
-echo "=== wifi-kickout-universal started on $DATE_NOW ===" >> "$LOGFILE"
+echo "=== universal-autokick started on $DATE_NOW ===" >> "$LOGFILE"
 
 ##############################################
 # HELPER FUNCTIONS
@@ -274,4 +274,4 @@ for IFACE in $IFACES; do
     echo "No known method for $IFACE produced station data. Skipping." >> "$LOGFILE"
 done
 
-echo "=== wifi-kickout-universal finished on $DATE_NOW ===" >> "$LOGFILE"
+echo "=== universal-autokick finished on $DATE_NOW ===" >> "$LOGFILE"
