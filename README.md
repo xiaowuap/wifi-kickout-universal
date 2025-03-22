@@ -1,5 +1,6 @@
 # wifi-kickout-universal  
 Automatically kick weak-signal Wi-Fi clients off your OpenWrt device, no matter which driver or interface naming scheme is at play. Because who needs freeloaders with a cringe-worthy signal anyway? 🚀🦶
+
 This repository was inspired by [smallerxie/wifi-kickout](https://github.com/smallerxie/wifi-kickout), thanks for his/her original work :) But it can't work on my Xiaomi BE10000:)
 
 ---
