@@ -52,11 +52,11 @@ In short: *It’s your Wi-Fi bouncer.* And it’s not afraid to show clients the
 
    Or 
 ```bash
-   wget -P /usr/bin/ https://github.com/xiaowuap/wifi-kickout-universal/raw/refs/heads/main/wifi-kickout-universal.sh
+wget -P /usr/bin/ https://github.com/xiaowuap/wifi-kickout-universal/raw/refs/heads/main/wifi-kickout-universal.sh
    ```
 2. **Make it executable**:
    ```bash
-   chmod +x /usr/bin/wifi-kickout-universal.sh
+chmod +x /usr/bin/wifi-kickout-universal.sh
    ```
 
 ---
