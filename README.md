@@ -49,14 +49,12 @@ In short: *It’s your Wi-Fi bouncer.* And it’s not afraid to show clients the
 ## Installation
 
 1. **Add** the script to your router, e.g. `/usr/bin/wifi-kickout-universal.sh`.
-
-   Or 
-```bash
-wget -P /usr/bin/ https://github.com/xiaowuap/wifi-kickout-universal/raw/refs/heads/main/wifi-kickout-universal.sh
+   ```bash
+   wget -P /usr/bin/ https://github.com/xiaowuap/wifi-kickout-universal/raw/refs/heads/main/wifi-kickout-universal.sh
    ```
 2. **Make it executable**:
    ```bash
-chmod +x /usr/bin/wifi-kickout-universal.sh
+   chmod +x /usr/bin/wifi-kickout-universal.sh
    ```
 
 ---
